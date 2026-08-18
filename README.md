@@ -42,5 +42,5 @@ O repositório é estruturado de forma modular para garantir organização e fac
 
 Como este é um projeto vivo, convido você a acompanhar as atualizações. Novas implementações, correções e documentações são integradas conforme consolido novos conhecimentos.
 
-Desenvolvido com foco em qualidade e escalabilidade por  Avelar-cipher.
+Desenvolvido com foco em qualidade e escalabilidade por  0x-Mogg.
 
