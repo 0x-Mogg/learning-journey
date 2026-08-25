@@ -1,61 +1,64 @@
-# Jogo Jokenpô (Pedra, Papel e Tesoura) em C++
+# 🕹️ Jogo Jokenpô (Pedra, Papel e Tesoura) em C++
 
 <p align="center">
-  <b>Autor:</b> 0x-Mogg | <b>Versão:</b> 1.0.0 | <b>Data:</b> 2026-08-23
+  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" alt="Status Concluído">
+  <img src="https://img.shields.io/badge/Linguagem-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/Plataforma-Linux%20%2F%2F%20Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Linux">
+  <img src="https://img.shields.io/badge/Autor-0x--Mogg-blueviolet?style=for-the-badge" alt="Autor 0x-Mogg">
 </p>
 
 ---
 
 ## 🎯 Sobre o Projeto
 
-Este projeto consiste na implementação clássica do jogo **Pedra, Papel e Tesoura (Jokenpô)** desenvolvida em **C++**, criada como parte dos desafios práticos da faculdade de Engenharia da Computação. 
+Desenvolvido de forma autônoma como parte dos desafios práticos da faculdade de **Engenharia da Computação**, este projeto vai além da implementação tradicional de um Jokenpô. 
 
-O foco principal desta implementação foi ir além do básico, aplicando conceitos importantes de modularização de código, controle de fluxo por variáveis globais, manipulação de tempo de execução (*delay*) e tratamento de entradas do usuário com validações condicionais completas.
+O foco foi estruturar um código limpo, modular e robusto, aplicando conceitos fundamentais de programação de sistemas, como controle de fluxo avançado, gerenciamento de escopo por variáveis globais, simulação de latência de processamento (*delay*) e tratamento rigoroso de entradas de usuário em ambiente Unix/Linux.
 
 ---
 
 ## 🛠️ Tecnologias e Conceitos Aplicados
 
-* **Linguagem:** C++
-* **Modularização:** Organização da lógica de interface através de funções personalizadas (`void menu()`).
-* **Controle de Fluxo:** Uso de estruturas condicionais aninhadas (`if`, `else if`, `else`) e mapeamento de escolhas via `switch-case`.
-* **Biblioteca de Tempo (`<chrono>` e `<thread>`):** Implementação de um atraso simulado (*delay*) para criar suspense durante o turno de processamento da máquina.
-* **Geração Pseudoaleatória (`<cstdlib>`):** Sorteio dinâmico das jogadas da inteligência artificial.
+* **Linguagem:** C++ (Padrão moderno compatível com compiladores GCC/G++).
+* **Modularização:** Organização de interface e lógica desacoplada através de funções especializadas (`void menu()`).
+* **Controle de Fluxo:** Utilização de estruturas condicionais aninhadas (`if`, `else if`, `else`) e mapeamento de opções via `switch-case`.
+* **Biblioteca de Tempo (`<chrono>` e `<thread>`):** Implementação deliberada de atraso temporal (*sleep*) para simular o tempo de processamento e criar suspense no turno da inteligência artificial.
+* **Geração Pseudoaleatória (`<cstdlib>`):** Sorteio dinâmico das jogadas da máquina baseado em operações modulares.
 
 ---
 
-## 🕹️ Regras do Jogo
+## ⚔️ Regras e Lore Temática
 
-As regras seguem o formato tradicional com uma temática personalizada implementada no código:
+As regras clássicas ganharam uma identidade customizada diretamente no código-fonte para enriquecer a experiência interativa:
 
-* **Pedra** (`[1]` - *Pedra de fogo*): Ganha de Tesoura (amassa/quebra).
-* **Papel** (`[2]` - *Folhas de cerejeira*): Ganha de Pedra (embrulha).
-* **Tesoura** (`[3]` - *Mão de Tesoura*): Ganha de Papel (corta).
+| Escolha | Item Temático | Vence de | Condição de Vitória |
+| :--- | :--- | :--- | :--- |
+| **`[1]`** | Pedra de fogo | Tesoura | Amassa / Quebra |
+| **`[2]`** | Folhas de cerejeira | Pedra | Embrulha |
+| **`[3]`** | Mão de Tesoura | Papel | Corta |
 
 ---
 
-## 📂 Estrutura do Código
+## 📂 Arquitetura e Estrutura do Código
 
-O código-fonte foi estruturado de forma limpa e comentada para facilitar a legibilidade e a manutenção:
+O código-fonte foi redigido com documentação interna detalhada para assegurar alta legibilidade:
 
-1. **Includes e Configurações:** Importação de bibliotecas padrão de entrada/saída, manipulação de tempo e números randômicos.
+1. **Includes e Configurações:** Importação otimizada de bibliotecas padrão de I/O, manipulação de tempo e aleatoriedade.
 2. **Variáveis Globais:** Gerenciamento centralizado da escolha numérica do jogador (`opcoes`).
-3. **Protótipos de Funções:** Declaração antecipada da função de menu.
+3. **Protótipos de Funções:** Declaração antecipada de assinaturas para garantir a organização do escopo de compilação.
 4. **Função Principal (`main`):**
-   * Captura do *nickname* personalizado do usuário.
+   * Captura personalizada do *nickname* do usuário via terminal.
    * Chamada do menu modularizado.
-   * Execução do turno da máquina com temporizador de 2 segundos.
-   * Processamento e exibição do resultado da partida (Vitória, Derrota ou Empate com mensagens dinâmicas).
-5. **Implementação de Funções:** Lógica de exibição da interface de escolha e tratamento de opções inválidas.
+   * Execução assíncrona simulada com temporizador de 2 segundos para o turno da máquina.
+   * Processamento lógico de verificação de resultados (Vitória, Derrota ou Empate) com mensagens dinâmicas personalizadas.
+5. **Implementação de Funções:** Exibição da interface de escolha do usuário e validação de tratamento para entradas inválidas.
 
 ---
 
-## 🚀 Como Compilar e Executar
+## 🚀 Como Compilar e Executar (Ambiente Linux / Debian / Ubuntu)
 
-Se você estiver em um ambiente Linux (como o Ubuntu), siga os passos abaixo para compilar e rodar o jogo via terminal:
+Se você estiver rodando o projeto no seu ambiente Linux, siga os passos abaixo no terminal:
 
-1. Certifique-se de ter um compilador C++ instalado (como o `g++`).
-2. Abra o terminal na pasta onde o arquivo `.cpp` está salvo.
-3. Compile o código executando o comando:
+1. **Verifique a instalação do compilador G++:**
    ```bash
-   g++ jokenpo.cpp -o jokenpo
+   g++ --version
