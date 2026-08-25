@@ -1,64 +1,42 @@
-# 🕹️ Jogo Jokenpô (Pedra, Papel e Tesoura) em C++
+# 🧪 Laboratório de Engenharia (Labs)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" alt="Status Concluído">
-  <img src="https://img.shields.io/badge/Linguagem-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
-  <img src="https://img.shields.io/badge/Plataforma-Linux%20%2F%2F%20Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Linux">
+  <img src="https://img.shields.io/badge/Ambiente-Prática_Acadêmica-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="Prática Acadêmica">
+  <img src="https://img.shields.io/badge/Status-Em_Evolução-brightgreen?style=for-the-badge" alt="Status Em Evolução">
   <img src="https://img.shields.io/badge/Autor-0x--Mogg-blueviolet?style=for-the-badge" alt="Autor 0x-Mogg">
 </p>
 
 ---
 
-## 🎯 Sobre o Projeto
+## 🎯 Propósito da Pasta
 
-Desenvolvido de forma autônoma como parte dos desafios práticos da faculdade de **Engenharia da Computação**, este projeto vai além da implementação tradicional de um Jokenpô. 
+Bem-vindo ao meu **Laboratório de Exercícios Acadêmicos** (`labs/`). Este espaço é dedicado a abrigar implementações práticas, desafios de programação, automações e protótipos desenvolvidos ao longo da minha trajetória na faculdade de **Engenharia da Computação**.
 
-O foco foi estruturar um código limpo, modular e robusto, aplicando conceitos fundamentais de programação de sistemas, como controle de fluxo avançado, gerenciamento de escopo por variáveis globais, simulação de latência de processamento (*delay*) e tratamento rigoroso de entradas de usuário em ambiente Unix/Linux.
-
----
-
-## 🛠️ Tecnologias e Conceitos Aplicados
-
-* **Linguagem:** C++ (Padrão moderno compatível com compiladores GCC/G++).
-* **Modularização:** Organização de interface e lógica desacoplada através de funções especializadas (`void menu()`).
-* **Controle de Fluxo:** Utilização de estruturas condicionais aninhadas (`if`, `else if`, `else`) e mapeamento de opções via `switch-case`.
-* **Biblioteca de Tempo (`<chrono>` e `<thread>`):** Implementação deliberada de atraso temporal (*sleep*) para simular o tempo de processamento e criar suspense no turno da inteligência artificial.
-* **Geração Pseudoaleatória (`<cstdlib>`):** Sorteio dinâmico das jogadas da máquina baseado em operações modulares.
+O objetivo desta pasta não é apenas armazenar tarefas prontas, mas consolidar a lógica de programação, explorar estruturas de dados, testar algoritmos e aplicar conceitos teóricos direto no código-fonte.
 
 ---
 
-## ⚔️ Regras e Lore Temática
+## 📂 Projetos e Exercícios Hospedados
 
-As regras clássicas ganharam uma identidade customizada diretamente no código-fonte para enriquecer a experiência interativa:
+Abaixo estão listados os laboratórios práticos e projetos desenvolvidos e documentados neste diretório:
 
-| Escolha | Item Temático | Vence de | Condição de Vitória |
+| Projeto / Exercício | Descrição Curta | Linguagem / Tecnologias | Status |
 | :--- | :--- | :--- | :--- |
-| **`[1]`** | Pedra de fogo | Tesoura | Amassa / Quebra |
-| **`[2]`** | Folhas de cerejeira | Pedra | Embrulha |
-| **`[3]`** | Mão de Tesoura | Papel | Corta |
+| **[`jokenpo/`](./jokenpo/)** | Jogo clássico de Pedra, Papel e Tesoura com modularização, *delay* assíncrono e regras customizadas. | `C++` | 🟢 Concluído |
+| *(Em Breve)* | Próximos desafios e exercícios acadêmicos da grade curricular. | `C++` / `Python` | 🔄 Planejado |
 
 ---
 
-## 📂 Arquitetura e Estrutura do Código
+## 🛠️ Padrões de Desenvolvimento
 
-O código-fonte foi redigido com documentação interna detalhada para assegurar alta legibilidade:
-
-1. **Includes e Configurações:** Importação otimizada de bibliotecas padrão de I/O, manipulação de tempo e aleatoriedade.
-2. **Variáveis Globais:** Gerenciamento centralizado da escolha numérica do jogador (`opcoes`).
-3. **Protótipos de Funções:** Declaração antecipada de assinaturas para garantir a organização do escopo de compilação.
-4. **Função Principal (`main`):**
-   * Captura personalizada do *nickname* do usuário via terminal.
-   * Chamada do menu modularizado.
-   * Execução assíncrona simulada com temporizador de 2 segundos para o turno da máquina.
-   * Processamento lógico de verificação de resultados (Vitória, Derrota ou Empate) com mensagens dinâmicas personalizadas.
-5. **Implementação de Funções:** Exibição da interface de escolha do usuário e validação de tratamento para entradas inválidas.
+Para garantir a qualidade, reprodutibilidade e o rigor de engenharia de software em cada laboratório contido aqui, todas as subpastas seguem diretrizes rígidas:
+* **Código Modular:** Separação clara entre interface, lógica e processamento de dados.
+* **Documentação Dedicada:** Cada projeto possui seu próprio `README.md` detalhando as regras, tecnologias e instruções de execução.
+* **Ambiente Unix/Linux:** Códigos testados e otimizados para rodar de forma nativa via terminal.
 
 ---
 
-## 🚀 Como Compilar e Executar (Ambiente Linux / Debian / Ubuntu)
-
-Se você estiver rodando o projeto no seu ambiente Linux, siga os passos abaixo no terminal:
-
-1. **Verifique a instalação do compilador G++:**
-   ```bash
-   g++ --version
+<p align="center">
+  <b>Organizado com rigor técnico por 0x-Mogg.</b><br>
+  <i>Estudante de Engenharia da Computação | Focado em Sistemas e Desenvolvimento.</i>
+</p>
