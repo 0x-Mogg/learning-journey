@@ -1,2 +1,43 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+## ==========================================
+# REGRAS GERAIS E QUEBRAS DE LINHA (LF)
+# ==========================================
+# Auto-detecção de arquivos de texto com normalização padrão para Linux/Unix (LF)
+* text=auto eol=lf
+
+# ==========================================
+# CONFIGURAÇÕES ESPECÍFICAS POR LINGUAGEM
+# ==========================================
+# C++ / Header files
+*.cpp text diff=cpp
+*.h text diff=cpp
+*.hpp text diff=cpp
+*.c text diff=cpp
+
+# Scripts de automação (Shell Script / Python)
+*.sh text eol=lf
+*.py text diff=python
+
+# Documentação (Markdown)
+*.md text diff=markdown
+
+# ==========================================
+# PROTEÇÃO DE ARQUIVOS BINÁRIOS
+# ==========================================
+# Impede que o Git trate arquivos compilados ou compactados como texto
+*.out binary
+*.exe binary
+*.o binary
+*.obj binary
+*.a binary
+*.lib binary
+*.so binary
+*.dll binary
+*.zip binary
+*.tar.gz binary
+*.pdf binary
+
+# Imagens de projeto (prints, diagramas)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg binary
