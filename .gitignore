@@ -1,0 +1,70 @@
+# ==========================================
+# C++ / BINÁRIOS E BUILDS
+# ==========================================
+# Binários de execução e objetos de compilação
+*.out
+*.exe
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+*.lib
+*.dll
+
+# Pastas comuns de compilação/build
+build/
+bin/
+out/
+target/
+
+# ==========================================
+# EDITORES DE CÓDIGO (VS Code)
+# ==========================================
+.vscode/
+*.suo
+*.ntvs
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# ==========================================
+# SISTEMA OPERACIONAL (Linux / Ubuntu)
+# ==========================================
+# Arquivos de diretório do Linux
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+.directory
+
+# Arquivos temporários e de troca
+*.log
+*.tmp
+.cache/
+
+# ==========================================
+# SEGURANÇA E DADOS SENSÍVEIS (Essencial)
+# ==========================================
+# Nunca subir arquivos de configuração local, senhas ou chaves privadas
+.env
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+secrets.json
+# ==========================================
+# DEPURAÇÃO E FERRAMENTAS DE SISTEMA
+# ==========================================
+# Arquivos de depuração do GDB e Core Dumps
+gdb.txt
+core
+*.core
+
+# Ferramentas de análise e cobertura de código
+*.gcno
+*.gcda
+*.gcov
+.valgrindrc
