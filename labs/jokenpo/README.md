@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" alt="Status Concluído">
   <img src="https://img.shields.io/badge/Linguagem-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
-  <img src="https://img.shields.io/badge/Plataforma-Linux%20%2F%2F%20Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Linux">
+  <img src="https://img.shields.io/badge/Plataforma-Linux%20%2F%2F%20Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white" alt="Linux">
   <img src="https://img.shields.io/badge/Autor-0x--Mogg-blueviolet?style=for-the-badge" alt="Autor 0x-Mogg">
 </p>
 
