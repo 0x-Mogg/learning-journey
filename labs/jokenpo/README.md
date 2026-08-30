@@ -1,5 +1,3 @@
-# 🕹️ Jogo Jokenpô (Pedra, Papel e Tesoura) em C++
-
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" alt="Status Concluído">
   <img src="https://img.shields.io/badge/Linguagem-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
@@ -32,10 +30,10 @@ O foco foi estruturar um código limpo, modular e robusto, aplicando conceitos f
 As regras clássicas ganharam uma identidade customizada diretamente no código-fonte para enriquecer a experiência interativa:
 
 | Escolha | Item Temático | Vence de | Condição de Vitória |
-| :--- | :--- | :--- | :--- |
+| :---: | :--- | :--- | :--- |
 | **`[1]`** | Pedra de fogo | Tesoura | Amassa / Quebra |
-| **`[2]`** | Folhas de cerejeira | Pedra | Embrulha |
-| **`[3]`** | Mão de Tesoura | Papel | Corta |
+| **`[2]`** | Papel | Pedra | Embrulha |
+| **`[3]`** | Tesoura | Papel | Corta |
 
 ---
 
@@ -55,10 +53,37 @@ O código-fonte foi redigido com documentação interna detalhada para assegurar
 
 ---
 
-## 🚀 Como Compilar e Executar (Ambiente Linux / Debian / Ubuntu)
+## 🚀 Como Compilar e Executar (Ambiente Linux / Debian/Ubuntu)
 
-Se você estiver rodando o projeto no seu ambiente Linux, siga os passos abaixo no terminal:
+Siga os passos abaixo no terminal para compilar e executar o projeto:
 
-1. **Verifique a instalação do compilador G++:**
-   ```bash
-   g++ --version
+### 1. Verifique a instalação do compilador G++
+Certifique-se de que o G++ está instalado no seu sistema executando o comando:
+```bash
+g++ --version
+
+Caso o terminal retorne que o comando não foi encontrado, instale as ferramentas de compilação essenciais executando:
+Bash
+
+    sudo apt update && sudo apt install build-essential
+
+2. Navegue até a pasta do projeto
+
+Utilize o comando cd para acessar o diretório onde estão localizados os seus arquivos de código-fonte:
+Bash
+
+cd caminho/para/a/pasta-do-projeto
+
+3. Compile o código-fonte
+
+Gere o arquivo executável a partir do seu código C++. Substitua main.cpp pelo nome do seu arquivo principal e programa pelo nome de preferência para o binário:
+Bash
+
+g++ main.cpp -o programa
+
+4. Execute o programa
+
+Inicie o arquivo binário gerado na etapa anterior diretamente pelo terminal:
+Bash
+
+./programa
